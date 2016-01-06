@@ -1,0 +1,6 @@
+Sub 巨集8()'' 巨集8 巨集''
+    For i = 1 To ActiveWorkbook.Sheets.Count    Range("A1:E24").Select    Selection.Copy    Range("F1").Select    ActiveWindow.SmallScroll Down:=-25    Selection.PasteSpecial Paste:=xlAll, Operation:=xlNone, SkipBlanks:=False _        , Transpose:=True    ActiveWindow.SmallScroll ToRight:=-61    Range("A1:E24").Select    Application.CutCopyMode = False    Selection.Delete Shift:=xlToLeft    ActiveWindow.SmallScroll ToRight:=-28
+    ActiveSheet.Next.Select
+
+            Next
+End Sub
